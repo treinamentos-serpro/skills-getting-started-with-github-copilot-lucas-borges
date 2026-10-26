@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 }
 
                 await fetchActivities();
-                messageDiv.textContent = result.message;
+                messageDiv.textContent = `Inscrição de ${participant} removida de ${name}.`;
                 messageDiv.className = "message success";
                 messageDiv.classList.remove("hidden");
               } catch (error) {
